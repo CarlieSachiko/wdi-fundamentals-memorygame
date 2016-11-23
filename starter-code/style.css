@@ -13,7 +13,7 @@ h2 {
 }
 .board {
 	display: inline-block;
-	height: 50%;
+	height: 80%;
 	width: 50%;
 }
 .card {
@@ -57,4 +57,8 @@ a:hover {
 
 footer {
 	background-color: #808080;
+}
+img {
+	height: 200px;
+  width: 150px;
 }
