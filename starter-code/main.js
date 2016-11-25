@@ -1,5 +1,6 @@
 var cards = ['queen','queen','king','king'];
 var cardsInPlay = [];
+var gameBoard = document.getElementById('game-board');
 
 
 /*if (cardOne===cardTwo) {
@@ -13,8 +14,6 @@ alert("You found a match!");
 if (cardOne===cardFour){
 alert("Sorry, try again.");
 }*/
-
-var gameBoard = document.getElementById('game-board');
 
 function createBoard() {
 	for (var i=0; i<cards.length; i++) {
@@ -45,11 +44,55 @@ function isMatch (cards) {
 	if (cards[0]===cards[1]) {
 		alert ("You found a match!");
 	} else {
-		alert ("sorry,try again.");
+		alert ("Sorry, try again.");
 	}
+	//for (var k=0; k<cards.length;k++){
+	//	document.getElementsByClassName('card')[k].innerHTML='';
+		document.getElementsByClassName('card')[0].innerHTML='';
+		document.getElementsByClassName('card')[1].innerHTML='';
+		document.getElementsByClassName('card')[2].innerHTML='';
+		document.getElementsByClassName('card')[3].innerHTML='';
 }
 
+
+function shuffleCards (array){
+  for (var i = array.length - 1; i > 0; i --) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
+var shuffleButton = document.querySelector('button');
+shuffleButton.addEventListener('click', shuffleCards(cards));
+
 createBoard();
+
+
+
+
+
+/*function shuffleCards (array){
+  var i = 0
+    , j = 0
+    , temp = null;
+
+  for (i = array.length - 1; i > 0; i -= 1) {
+    j = Math.floor(Math.random() * (i + 1));
+    temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+var resetButton =document.querySelector('button');
+resetButton.addEventListener('click', shuffleCards);*/
+
+
+
+
+
 
 
 
