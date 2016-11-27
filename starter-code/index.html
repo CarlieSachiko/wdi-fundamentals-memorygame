@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
   <title>Memory Game</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-  <nav class="clearfix">
-    <a href="#">Instructions</a>
-    <a href="#">Game</a>
+  <nav class="clearfix"> 
+    <a href="index.html">Home</a>
+    <a href="#Instructions">Instructions</a>
+    <a href="#Game">Game</a>
+    <a href="about.html">About the Creator</a>
   </nav>
-  <hr>
-  <h1>Memory Game</h1>
-  <h4>Memory games are not only entertaining, but also stimulating for your brain. By playing you are keeping your brain active, engaged, and sharp! So what is there to lose? Let's play!</h4>
-  <h2>Instructions</h2>
+ <hr>
+<h1>MEMORY GAME</h1>
+  <h4>Memory games are not only entertaining, but also stimulating for your brain. By playing you are keeping your brain active, engaged, and sharp! </h4>
+  <p> Here is an excerpt from Google on the importance of mind games:<p>
+  <br>
+  <p class="google"><i>The purpose of these games is to improve your memory, thinking, reaction time, and cognitive ability. These games are especially important later in life to keep these factors strong. While it may seem hard to believe, by simply playing certain games you can help avoid degeneration and memory loss by continuing to work your brain and keep it sharp.Mind games are usually simple in design but have a big impact. Think of your brain like your abs. If you work out your abs you are going to develop strong abs. However, if you do not work out your abs they will lose their definition and strength. Mind games are built to work your brain to keep it sharp and alert.</i></p>
+<h4>So what is there to loose? Let's play!</h4>
+<br>
+  <a name='Instructions' class="Instructions"><h2>INSTRUCTIONS</h2></a>
     <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
 
-  <div id ="game-board" class="board">
+  <a name='Game'><div id ="game-board" class="board"></a>
      <!--<div class="card"></div>
       <div class="card"></div>
       <div class="card"></div>
       <div class="card"></div>-->
     </div>
-<button type='button'>New Game</button>
+<button id="resetbutton" type='button' onClick="resetBoard();">Restart</button>
     <footer>
   <p>Created with &hearts; by <span class="name">Carlie</span></p>
   </footer>

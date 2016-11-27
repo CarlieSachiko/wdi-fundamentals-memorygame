@@ -7,43 +7,86 @@ body {
 
 h1 {
 	color: rgb(2,132,130);
+	font-size: 50px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 6px;
 }
-h2 {
+h2, h3 {
 	color: #ffd700;
+	font-family: 'Josefin Sans', sans-serif;
 }
+h4, p {
+	font-family: 'Crimson Text', serif;
+}
+
+p {
+	width: 75%;
+	margin: auto;
+}
+p.google {
+	text-align: left;
+	border-left: thin solid black;
+	padding-left: 10px;
+	width: 600px;
+}
+
+h4.aboutMe {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding:10px;
+}
+
 .board {
 	display: inline-block;
 	height: 80%;
-	width: 50%;
+	width: 75%;
+	text-align:center;
+	margin: 20px;
+	
 }
+
 .card {
 	height: 200px;
 	width: 150px;
 	border: 1px solid black; 
 	border-radius: 10px;
-	background-color: yellow;
+	background-color: #ee5f3c;
+	margin: 4%;	
 	float: left;
-	margin: 8%;
 }
 
 .name {
-	color: #ff0000;
+	color: black;
+	text-align: center;
 }
 
 nav {
-	background-color: #808080;
+	background-color: #ffbf00;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:center;
+	margin: auto;
 }
 
 nav a {
 	background-color: #ffbf00;
 	color: white;
 	padding: 35px;
-	display: block;
-	float: left;
+	display: inline-block;
+	text-decoration: none;
 }
 
 a:hover {
 	background-color: #ee5f3c;
+	text-decoration: underline;
+}
+
+a.Instructions {
+	letter-spacing: 6px;
+}
+
+a.Instructions:hover {
+	text-decoration: none;
 }
 
 .clearfix:after {
@@ -53,12 +96,66 @@ a:hover {
     clear: both;
     height: 0;
     font-size: 0;
+    text-align: center;
 }
 
 footer {
-	background-color: #808080;
+	background-color: #ffffff;
+	padding: 20px;
 }
+
 img {
 	height: 200px;
-  width: 150px;
+	width: 150px; 
+	display: inline-block;
+}
+
+img.aboutPic {
+	width: 200px;
+	height: 200px;
+	object-fit:cover;
+	border-radius: 50%;
+}
+
+div.form {
+	width: 50%;
+	margin: auto;
+}
+
+form {
+	text-align: left;
+	font-family: 'Crimson Text', serif;
+}
+
+input[type=text] {
+	width: 75%;
+	padding: 12px 50px;
+	margin: 8px 0;
+}
+input.comment {
+	padding: 40px 50px;
+}
+input[type=button], input[type=submit] {
+    background-color: rgb(2,132,130);
+	border:none;
+	color: white;
+	font-size: 12px;
+	padding: 10px;
+	margin:auto;
+	text-align:center;
+	cursor: pointer;
+	letter-spacing: 3px;
+}
+
+#resetbutton {
+	background-color: rgb(2,132,130);
+	border:none;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	margin:50px auto 130px auto;
+	display: block;
+	text-align:center;
+	cursor: pointer;
+	letter-spacing: 3px;
 }
