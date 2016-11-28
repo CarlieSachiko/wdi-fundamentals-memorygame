@@ -101,7 +101,7 @@ a.Instructions:hover {
 
 footer {
 	background-color: #ffffff;
-	padding: 20px;
+	padding-top: 40px;
 }
 
 img {
@@ -117,35 +117,17 @@ img.aboutPic {
 	border-radius: 50%;
 }
 
-div.form {
-	width: 50%;
-	margin: auto;
+ .email {
+ 	color:#ffbf00;
+ 	text-decoration: none;
+ 	margin:20px;
+ }
+
+a.email:hover {
+	text-decoration: underline;
+	background-color: #ffffff;
 }
 
-form {
-	text-align: left;
-	font-family: 'Crimson Text', serif;
-}
-
-input[type=text] {
-	width: 75%;
-	padding: 12px 50px;
-	margin: 8px 0;
-}
-input.comment {
-	padding: 40px 50px;
-}
-input[type=button], input[type=submit] {
-    background-color: rgb(2,132,130);
-	border:none;
-	color: white;
-	font-size: 12px;
-	padding: 10px;
-	margin:auto;
-	text-align:center;
-	cursor: pointer;
-	letter-spacing: 3px;
-}
 
 #resetbutton {
 	background-color: rgb(2,132,130);

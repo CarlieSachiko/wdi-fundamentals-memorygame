@@ -44,17 +44,13 @@ function isTwoCards(){
 }
 
 function timedResetCards () {
-	//for (var k=0; k<cards.length;k++){
-	//	document.getElementsByClassName('card')[k].innerHTML='';
-		setTimeout(cardReset, 200);
+		setTimeout(cardReset, 300);
 		function cardReset() {
-		document.getElementsByClassName('card')[0].innerHTML='';
-		document.getElementsByClassName('card')[1].innerHTML='';
-		document.getElementsByClassName('card')[2].innerHTML='';
-		document.getElementsByClassName('card')[3].innerHTML='';
-		document.getElementsByClassName('card')[4].innerHTML='';
-		document.getElementsByClassName('card')[5].innerHTML='';
-	}
+			var facedown = document.getElementsByClassName('card');
+			for (var k=0; k<facedown.length;k++){
+			facedown[k].innerHTML='';
+			}
+		}
 }
 
 function isMatch (cards) {
@@ -66,46 +62,28 @@ function isMatch (cards) {
 	}
 }
 
-function shuffleCards (array) {
-	var i = 0, j = 0, temp = null;
-  	for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * i + 1);
-    temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-	}
-}
+/*function shuffle(array) {
+	var i = array.length, j, t;
+  	while(i){
+    t = Math.floor(Math.random() * i--);
+    j = array[i];
+    array[i] = array[t];
+    array[t] = j;
+	}	
+	return array;
+}*/
 
 function resetBoard () {
 	timedResetCards();
 	cardsInPlay();
-  	shuffleCards(cards);
-  	/*for (var l = 0; l < cards.length; l++) {
-    var cardReset = document.getElementsByClassName('card'); // create a new div tag
-    cardReset[l].setAttribute('data-card', cards[l]); // set the data-card to its card value, king or queen
-  }*/
+  	shuffle(cards);
 }
+
 
 createBoard();
 
 
 
-
-
-/*function shuffleCards (array){
-  var i = 0
-    , j = 0
-    , temp = null;
-
-  for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1));
-    temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-}
-var resetButton =document.querySelector('button');
-resetButton.addEventListener('click', shuffleCards);*/
 
 
 
